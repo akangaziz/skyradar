@@ -23,8 +23,6 @@ Users: ATC Officers in the world
 <img src="http://natari.co.id/skyradar/screenshoots/welcome-page.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/menusx.png">
-<br><br>
 
 <img src="http://natari.co.id/skyradar/screenshoots/submenu-other.png">
 <br><br>
