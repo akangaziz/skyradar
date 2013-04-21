@@ -63,10 +63,7 @@ Users: ATC Officers in the world
 
 <img src="http://natari.co.id/skyradar/screenshoots/pic4.png">
 <br><br>
-
-<img src="http://natari.co.id/skyradar/screenshoots/pic5.png">
-<br><br>
-
+ 
 <img src="http://natari.co.id/skyradar/screenshoots/pic6.png">
 <br><br>
 
@@ -85,5 +82,7 @@ Users: ATC Officers in the world
 <img src="http://natari.co.id/skyradar/screenshoots/pic11.png">
 <br><br>
 
+<img src="http://natari.co.id/skyradar/screenshoots/pic12.png">
+<br><br>
 
 
