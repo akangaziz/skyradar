@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuit access="public">
+	<prefuseaction>
+		<do action="lib.function" />
+		<do action="lib.adodb" />
+		<!--<include template="actInit"/>-->
+	</prefuseaction>
+	<fuseaction name="airport">
+		<include template="actAirPort"/>
+	</fuseaction>
+	<fuseaction name="gateway">
+		<include template="actGateway"/>
+	</fuseaction>
+</circuit>

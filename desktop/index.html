@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sky Radar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/skyradar.css" type="text/css" />
+    <script src="js/config.js"></script>
+    <script type="text/javascript">
+      	page 	= "login";
+      	token 	= '';
+      </script>
+    <!--AIR -->
+    <script type="text/javascript" src="js/AIRsrc/js/AIRAliases.js"></script>
+    <!--
+  	<script type="text/javascript" src="js/AIRsrc/js/AIRIntrospector.js"></script>
+	<script type="text/javascript" src="js/AIRsrc/js/AIRSourceViewer.js"></script>
+	-->
+	<!--END AIR-->
+	  <script src="js/assets/jquery.js"></script>
+	  <script src="js/assets/php.default.min.js"></script>
+	  <script src="js/air.js"></script>
+	  <script src="js/function.js"></script>
+	  
+	  <script src="js/assets/jquery.blockUI.js"></script>
+	  <script src="js/assets/bootbox.min.js"></script>
+	  
+	  <!--script for check update -->
+	  <script src="js/AIRsrc/applicationupdater_ui.swf" type="application/x-shockwave-flash"/>
+	  <script src="js/updateversion.js"></script>
+	  <script type="text/javascript">
+	  $(document).ready(function() {
+	  	//if(!isBrowser()) windowResize(screen.width,screen.height);
+	  	//window.location.href ="dashboard.html?token=NnwxMzU5NDgwMDA2&userid=6";
+	  	if(isWindows){
+	  		var tinggi = 0.96;
+	  	}else{
+	  		var tinggi = 0.92;
+	  	}
+	  	if(!isBrowser()) windowResize(screen.width,tinggi*screen.height);
+	  });
+	  function doLogin(){
+	  	//window.location.href ="dashboard.html";
+		var msisdn 	= $('#msisdn').val();
+    	var pin 	= $('#pin').val();
+    	if(msisdn=='admin' && pin=='admin'){
+    		changeUrl('dashboard.html?username=' + msisdn);
+    	}else{
+    		showError("Username & PIN salah!");
+    	}
+    	return false;
+	  }
+	  function doPairing(){
+	  	changeUrl('pairing.html');
+	  	return false;
+	  }
+	  function doForgotPIN(){
+	  	changeUrl('forgot.html');
+	  	return false;
+	  }
+	  </script>
+  </head>
+  <body style="display:none;background:rgb(19, 126, 153);">
+ 	<div class="container">
+ 			<div class="login">
+ 				<div class="h_bar inline ">
+ 					W e l c o m e
+ 					<span class="text-right"><a class='btn pull-right close' onClick="onAppClosing();"><i class='icon-remove'></i>Close</a></span>
+ 				</div>
+ 				
+ 				<div class="logo">
+ 					<img src="images/logo.png" alt="indosat_logo" width="253" height="73" />
+ 				</div>
+ 				<div class="form_login">
+ 					<form id='form' method='post' action=''>
+					<p><input type="text" placeholder="MSISDN" name='msisdn' id='msisdn' value='admin'/></p>
+					<p><input type="password" placeholder="PIN" name='pin' id="pin" value='admin'/></p>
+					<p class="button">
+					<button class="btn btn-warning" onClick="doLogin();return false;">LOGIN</button> 					
+					</p>
+					</form>
+ 				</div>
+ 				<center>developed in 12 hours for <br><img src="images/appschallenge.png" width='30%'></center>
+ 			</div>
+ 			
+ 	</div>
+ 	
+  	<script type="text/javascript" src="js/assets/widgets.js"></script>
+    <script src="js/assets/google-code-prettify/prettify.js"></script>
+    <script src="js/assets/bootstrap-transition.js"></script>
+    <script src="js/assets/bootstrap-alert.js"></script>
+    <script src="js/assets/bootstrap-modal.js"></script>
+    <script src="js/assets/bootstrap-dropdown.js"></script>
+    <script src="js/assets/bootstrap-scrollspy.js"></script>
+    <script src="js/assets/bootstrap-tab.js"></script>
+    <script src="js/assets/bootstrap-tooltip.js"></script>
+    <script src="js/assets/bootstrap-popover.js"></script>
+    <script src="js/assets/bootstrap-button.js"></script>
+    <script src="js/assets/bootstrap-collapse.js"></script>
+    <script src="js/assets/bootstrap-carousel.js"></script>
+    <script src="js/assets/bootstrap-typeahead.js"></script>
+    <script src="js/assets/bootstrap-affix.js"></script>
+    <script src="js/assets/application.js"></script>
+    <script src="js/assets/mousetrap.min.js"></script>
+	<script type="text/javascript">
+	  Mousetrap.bind('ctrl+r', function() { 
+      	changeUrl('index.html');
+      	return false; 
+      });
+      Mousetrap.bind('ctrl+i', function() { 
+      	var info = "apps mode: " + appsmode + "\n api_url: "+ api_url + "\n apps_version: "+ apps_version + "\n fg_source: "+fg_source;
+      	showError(info);
+      	return false; 
+      });
+      //$('#msisdn').val(mktime());
+    </script>
+  </body>
+</html>

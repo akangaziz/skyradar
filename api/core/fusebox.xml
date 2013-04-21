@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fusebox>	
+	<circuits>
+		<circuit alias="lib"   path="../apps/libr/" parent=""/>
+		<circuit alias="home" path="../apps/home/"/>
+    	<circuit alias="lay" path="../apps/layout/"/>
+	</circuits>
+
+	<parameters>
+		<parameter name="fuseactionVariable" value="fa" />
+		<parameter name="defaultFuseaction" value="home.main" />
+		<parameter name="defaultFilename" value="index" />
+		<parameter name="precedenceFormOrUrl" value="form" />
+		<parameter name="mode" value="development" />
+		<parameter name="password" value="secret" />
+		<parameter name="parseWithComments" value="false" />
+		<parameter name="scriptLanguage" value="php4" />
+		<parameter name="scriptFileDelimiter" value="php" />
+		<parameter name="maskedFileDelimiters" value="htm,cfm,cfml,php,php4,asp,aspx" />
+		<parameter name="characterEncoding" value="utf-8" />
+		<parameter name="parseWithIndentation" value="true" />
+		<parameter name="conditionalParse" value="true" />
+		<parameter name="allowLexicon" value="true" />
+		<parameter name="ignoreBadGrammar" value="true" />
+		<parameter name="useAssertions" value="false" />
+	</parameters>
+
+	<classes>
+	</classes>
+	
+	<lexicons>
+	</lexicons>
+
+	<globalfuseactions>
+		<preprocess>
+		</preprocess>
+		<postprocess>
+		</postprocess>
+	</globalfuseactions>
+	
+	<plugins>
+		<phase name="preProcess">
+		</phase>
+		<phase name="preFuseaction">
+		</phase>
+		<phase name="fuseactionException">
+		</phase>
+		<phase name="processError">
+		</phase>
+		<phase name="postFuseaction">
+		</phase>
+		<phase name="postProcess">
+		</phase>
+	</plugins>
+
+</fusebox> 

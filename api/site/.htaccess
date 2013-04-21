@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^airport$ index.php?fa=home.airport [QSA,L]
+RewriteRule ^gateway$ index.php?fa=home.gateway [QSA,L]
+

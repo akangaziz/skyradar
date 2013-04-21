@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuit access="internal">
+	<prefuseaction>
+	</prefuseaction>
+	<fuseaction name="function">
+		<include template="actFunction"/>
+		<include template="Array2XML"/>
+		<include template="actNetwork"/>
+	</fuseaction>
+	<fuseaction name="adodb">
+		<!--<include template="actConnection"/>-->
+	</fuseaction>
+	<fuseaction name="rssreader">
+        <include template="lastRSS"/>
+	</fuseaction>
+</circuit>

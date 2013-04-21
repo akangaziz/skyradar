@@ -1,0 +1,196 @@
+<style>
+body 
+{
+  margin: 0px;
+  padding: 2px;
+	color: black;
+ 	font-family: Arial, Verdana, sans-serif;
+	font-size: 8pt;
+  background: #FFFFFF;
+}
+td
+{
+ 	font-family: Arial, Verdana, sans-serif;
+	font-size: 8pt;
+	padding:0px;
+	border:0px;
+}
+input
+{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 8pt;
+}
+select
+{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 8pt;
+}
+.header
+{
+ 	font-family: Times New Roman, sans-serif;
+	font-size: 14pt;
+	color: #282f42;
+}
+.subheader
+{
+ 	font-family: Hallmarke Condensed Light, Arial, Verdana, sans-serif;
+	font-size: 11pt;
+	font-weight:bold;
+}
+.subheader2
+{
+ 	font-family: Hallmarke Condensed Light, Arial, Verdana, sans-serif;
+	font-size: 11pt;
+	font-weight:bold;
+	margin-bottom:0px;
+}
+.label
+{
+	font-weight:bold;
+}
+hr
+{
+	height: 1px;
+	color: #E8E8E8;
+	background: #E8E8E8;
+	border-style: solid;
+}
+.grayHR
+{
+	height: 1px;
+	color: #EBEBEB;
+	background: #EBEBEB;
+	border-style: solid;
+}
+.condensedhr
+{
+	padding-top:0px;
+	margin-top:0px;
+}
+.tableListingTable
+{
+	border-collapse: collapse;				 				
+	text-align: center;
+}
+.tableListingTable td
+{
+	border:1px solid #EBEBEB;
+	padding: 2px;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 8pt;
+}
+.tableListingTable .tableListingTableNoBorderNoPadding
+{
+	border: 0px;
+	padding: 0px;
+}
+.tableListingTable .tableListingHeader
+{
+	border-bottom:0px;
+	padding: 2px;
+	text-align: center;
+}
+.tableListingTable .tableListingHeader2
+{
+	border-top:0px;
+	padding: 2px;
+}
+.tableListingTable .tableListingHeader2NoBorder
+{
+	border-right:0px;
+	border-top:0px;
+	padding: 2px;
+}
+.tableListingTable .header
+{
+	background: #D5D5D5;
+}
+.error
+{
+	color:red;
+}
+.label
+{
+	font-weight:bold;
+}
+.codeshareIndicator
+{
+	font-weight: bold; 
+	font-size:9pt; 
+	color:#000000;
+}
+</style>							
+	
+ 	<div class="container">
+ 		<div class="dashboard">
+ 			<div class="inner">
+				<div class="h_bar clearfix">
+					<span class="pull-left">
+						
+						<span   style="color:white;"  id='1name'></span>					
+					</span>
+					<span class="pull-right" style="margin:-3px 10px 0 0"><a class="btn btn-small btn-danger" id='closeairport'>X CLOSE</a></span>
+				</div>	
+					<div class="katalog_details ">
+					<div id="css-table" style="width:100%;">
+						<div class="col left_cat">
+						<div class="h_bar_ijo" id='1detail_name'></div>
+							<div class="preview" id='gambarairport'></div>
+							<center>
+								<a class="btn btn-danger btn-small" id="btnMap">Map</a>
+	 							<a class="btn btn-danger btn-small" id="btnRoute">Route</a>
+	 							<a class="btn btn-danger btn-small" id="btnRadar">Radar</a>
+ 							</center>
+							<br><br>
+							    <div class="btn-group">
+    								<button class="btn" id="1detail_price"></button>
+    								<button class="btn btn-warning" id='1detail_btnbeli'></button>
+    							</div>
+    							
+    							<div class="sum_cat" id='1detail_spek'>
+	    							
+    							</div>
+     							
+						</div>
+						
+					<div class="col2 cat_details" style="width:100%;">
+						<div class="tabbable">
+							<ul class="nav nav-tabs nonmenu" id="tabairport">
+							    
+							    <li class="active"><a href="#departure" data-toggle="tab">Departure</a></li>
+							    <li><a href="#arrival" data-toggle="tab">Arrival</a></li>
+							    <li><a href="#weather" data-toggle="tab">Weather</a></li>
+							    <!--<li><a href="#airline" data-toggle="tab">Airline</a></li>
+							    <li><a href="#delay" data-toggle="tab">Delay</a></li>
+							    -->
+							  </ul>
+							  <div class="tab-content">
+							  	<div class="tab-pane active" id="departure">
+							    	<span id='iframedeparture'>
+							    	</span>
+							    	
+							    </div>
+							    <div class="tab-pane" id="arrival">
+							    	<span id='iframearrival'></span>
+							    </div>
+							    
+							    <div class="tab-pane" id="weather">
+
+<center><img src='images/weather.png'></center>
+*): static weather picture, just sample.
+<span id='iframeweather'></span>							    
+							    </div>
+							    <div class="tab-pane" id="delay">
+							    xxx3
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					</div>
+					</div><!-- end katalog_wrap -->
+				</div>
+ 			</div>
+ 		</div>
+ 	
+    

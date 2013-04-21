@@ -1,0 +1,53 @@
+
+.sliderwrapper{
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 80%; /*width of featured content slider*/
+height: 220px;
+float: left;
+}
+
+
+
+.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+padding: 0;
+width: 100%; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
+height: 100%;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+}
+.sliderwrapper .contentdiv img {height: 100%; width: 100%;}
+.pagination{
+width: 20%; /*Width of pagination DIV. Total width should equal slider's outer width (400+10+10=420)*/
+float: right;
+margin: 0;
+height: 220px;
+overflow: hidden;
+}
+
+.pagination a{
+padding: 5px;
+text-decoration: none; 
+color: #fff;
+background: white;
+display:block;
+height: 64px;
+background:url(../images/bg_content.jpg)  repeat;
+border-top:1px solid #555555;border-bottom:1px solid #111;
+font-size:11px;
+}
+.kurang1px {height: 63px;}
+.pagination a:hover, .pagination a.selected{
+color: #000;
+background-color: #FEE496;
+background:url(../images/bg_menu.jpg)  repeat;
+}
+.pagination a .img {height: 60px; width: 60px; overflow: hidden; float: left; margin-right: 10px;}
+.pagination a img {height: 100%; width: auto; max-width: none}
+.pagination a:hover {}
+

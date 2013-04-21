@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sky Radar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/dropdown.css" type="text/css" />
+    <link rel="stylesheet" href="css/skyradar.css" type="text/css" />
+    <script src="js/config.js"></script>
+    <script src="js/assets/jquery.js"></script>
+    <script type="text/javascript">
+      	page = "dashboard";
+    </script>
+	<script src="js/assets/billboard.min.js"></script>
+    <script src="js/assets/jquery.validate.js"></script>
+    <style>
+    .form-horizontal .control-label {
+    	text-align: left;
+    }
+    .form-horizontal .control-group {
+    	margin-bottom : 5px;
+    }
+    
+   form {
+	   	margin: 0 0 0px;
+   }
+    </style>
+    <script src="js/assets/mousetrap.min.js"></script>
+    <!--AIR -->
+	<script type="text/javascript" src="js/AIRsrc/js/AIRAliases.js"></script>
+	<!--
+  	<script type="text/javascript" src="js/AIRsrc/js/AIRIntrospector.js"></script>
+	<script type="text/javascript" src="js/AIRsrc/js/AIRSourceViewer.js"></script>
+	-->
+	
+	
+	<!--END AIR-->
+      
+	  <script src="js/assets/php.default.min.js"></script>
+      <script src="js/air.js"></script>
+      <script src="js/function.js"></script>
+	  <script src="js/assets/jquery.blockUI.js"></script>
+	  <script src="js/assets/bootbox.min.js"></script>
+	  
+	  
+	  	<!--Fancy Box-->
+	  	<script type="text/javascript" src="js/assets/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="js/assets/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+		<link rel="stylesheet" type="text/css" href="js/assets/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+		<link rel="stylesheet" type="text/css" href="js/assets/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+		<script type="text/javascript" src="js/assets/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<link rel="stylesheet" type="text/css" href="js/assets/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+		<script type="text/javascript" src="js/assets/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script type="text/javascript" src="js/assets/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/assets/fancybox/custom.iddp.fancy.js"></script>
+		<style type="text/css">
+			.fancybox-custom .fancybox-skin {
+				box-shadow: 0 0 50px #222;
+			}
+		</style>
+		<!--End Fancy Box-->
+		<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
+		<script type="text/javascript" src="js/dashboard.js"></script>
+		<!--End JS Lib for pradefined form-->
+	  <script type="text/javascript">
+	  username 	= jQuery.getUrlVar('username');
+	  function logout(){
+	  	bootbox.confirm("Are you sure wanna logout?", function(result) {
+		  if(result==true){
+		  	jQuery("body").css("display", "none");
+			//if(!isBrowser()) windowResize(460,480);
+			changeUrl('index.html');
+		  }
+		}); 
+	  }
+	  jQuery(document).ready(function() {	
+	  	buildMenu();
+	  });
+	  
+		/*
+	  	postdata	= setDataApi("token=" + token + "&user_id=" + user_id);
+	  	jQuery.ajax({
+		  type: "POST",
+		  url: api_url + "/menu",
+		  data: postdata,
+		  crossDomain: true,
+		  dataType: 'json',
+	  	  success: function(data, textStatus, jqXHR) {
+	  	  		resp_menu	= data;
+		        switch(resp_menu.status){
+	   				case "1":
+	   					buildMenu(resp_menu,true);
+	   					break;
+	   	 			default:
+	   	 				showError(resp_menu.message);
+	   	 				break;
+	   	 		}
+		  },
+		});
+		*/
+	  </script>
+	  
+	  
+  </head>
+  <body style="display:none;background:rgb(19, 126, 153);">
+  	
+  	<div id="fancycontainer" style="width:800px;"></div>
+  	<div id='linkbrowserModal'></div>
+	<div id="myModalKatalog" class="modal modal_katalog hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		</div>
+	</div>
+  	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	    <h3 id="myModalLabel"></h3>
+	  </div>
+	  <div class="modal-body">
+	    
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" id="btnModalLanjut">Lanjut</button>
+	    <button class="btn btn-primary" id="btnModalFinish" style="display:none;">Submit</button>
+	    <button class="btn btn-primary" id="btnModalLanjutPradefined" style="display:none;">Lanjut</button>
+	    <button class="btn btn-primary" id="btnModalFinishPradefined" style="display:none;">Submit</button>
+	    <span id='custombtnPradefined'></span>
+	  </div>
+	</div>
+	
+ 	<div id="header">
+		<div class="menu">
+			<ul class="nav nav-tabs">
+		    <li class="dropdown">
+			    <a class="dropdown-toggle produk" data-hover="dropdown" href="#" style="">
+				    INDONESIA
+			    </a>
+		    	<ul class="dropdown-menu" id='indonesia'>
+		    		<li>asdasds</li>
+		    	</ul>
+		    </li>
+		    <li class="dropdown">
+			    <a class="dropdown-toggle buy" data-hover="dropdown" href="#">
+				    SINGAPORE
+			    </a>
+		    	<ul class="dropdown-menu" id='singapore'>
+		        </ul>
+		    </li>
+		    <li class="dropdown">
+			    <a class="dropdown-toggle bayar" data-hover="dropdown" href="#">
+				    USA
+			    </a>
+		    	<ul class="dropdown-menu" id='usa'>
+		       	</ul>
+		    </li>
+		    <li class="dropdown">
+			    <a class="dropdown-toggle service" data-hover="dropdown" href="#">
+				    CHINA
+			    </a>
+		    	<ul class="dropdown-menu" id='china'>
+		        </ul>
+		    </li>
+		    <li class="dropdown">
+			    <a class="dropdown-toggle online" data-hover="dropdown" href="#">
+				    MALAYSIA
+			    </a>
+		    	<ul class="dropdown-menu" id='malaysia'>
+		        </ul>
+		    </li>
+		    <li class="dropdown">
+			    <a class="dropdown-toggle kilat" data-hover="dropdown" href="#">
+					GERMAN
+			    </a>
+		    	<ul class="dropdown-menu" id='german'>
+		        </ul>
+		    </li>
+		    <li class="dropdown">
+			    <a class="dropdown-toggle administrasi" data-hover="dropdown" href="#">
+					OTHER
+			    </a>
+			    <ul class="dropdown-menu" id='other'>
+		        </ul>
+		    </li>
+		    <li class="dropdown">
+			    <a class="dropdown-toggle logout"  onClick="logout();" href='#'>
+					LOGOUT
+			    </a>
+		    </li>
+		    <li class="mode"><br><img src='images/appschallenge.png' width='42%' height='40%'></li>
+		</ul>	
+		</div> 	
+	</div>	
+	<div id="wrapper">
+	<div id="scroller">
+	<div class="content row-fluid clearfix" id="container_formdashboard" style="display:none;"></div>
+	<div class="content row-fluid clearfix" id="container_aslidashboard"></div>
+ 	
+						
+						</div>
+						
+						
+					</div><!-- end mid -->
+					<div class="right">
+						<div class="not">
+							<div class="h_bar">Notifikasi</div>
+							<span id='dashboard_notification'></span>						
+ 						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+					<div class="clear"></div>
+ 	
+					<div class="footer clearfix">
+ 	
+ 					<div class="block">
+						<img src="images/date.png" alt="date" />
+						<span id='dashboard_time'></span>
+						</div>
+						
+						<div class="block">
+						<img src="images/logas.png" alt="shop" />
+						 <span id='dashboard_infologin'>
+						 Logged as Kopral Jono (CGK)</span>
+						</div>
+						
+						<div class="block">
+							<img src="images/notif.png" alt="shop" />
+							<a href='#' id='dashboard_notifunreg'>10 ATC Officers logged in</a>
+						</div>
+						
+						<div class="block">
+							<i class="icon-download"></i>
+							<a href='#' id='dashboard_notifdonlot'>You have 5 new messages</a>
+						</div>
+						
+						<div class="block end">
+						<img src="dem5xqcn61lj8.cloudfront.net/Weblets/flight_tracker_icon_blue.png" alt="shop" />
+						15 flights delayed
+						</div>
+ 					</div> 
+	<script type="text/javascript" src="js/assets/widgets.js"></script>
+    <script src="js/assets/google-code-prettify/prettify.js"></script>
+    <script src="js/assets/bootstrap-transition.js"></script>
+    <script src="js/assets/bootstrap-alert.js"></script>
+    <script src="js/assets/bootstrap-modal.js"></script>
+    <script src="js/assets/bootstrap-dropdown.js"></script>
+    <script src="js/assets/bootstrap-scrollspy.js"></script>
+    <script src="js/assets/bootstrap-tab.js"></script>
+    <script src="js/assets/bootstrap-tooltip.js"></script>
+    <script src="js/assets/bootstrap-popover.js"></script>
+    <script src="js/assets/bootstrap-button.js"></script>
+    <script src="js/assets/bootstrap-collapse.js"></script>
+    <script src="js/assets/bootstrap-carousel.js"></script>
+    <script src="js/assets/bootstrap-typeahead.js"></script>
+    <script src="js/assets/bootstrap-affix.js"></script>
+    <script src="js/assets/application.js"></script>
+    <script src="js/assets/twitter-bootstrap-hover-dropdown.js?view=1"></script>
+    <script>
+    jQuery(document).ready(function() {
+    	jQuery('.dropdown-toggle').dropdownHover(true);
+    });
+    </script>
+    <script src="js/assets/bootstrap-datepicker.js"></script>
+	<script src="js/assets/iscroll.js"></script>
+    <script type="text/javascript">
+
+	var myScroll;
+	function loaded() {
+		//myScroll = new iScroll('wrapper', 'block');
+		myScroll = new iScroll('wrapper',{
+						    useTransform: false,
+						    onBeforeScrollStart: function (e) {
+						        var target = e.target;
+						        while (target.nodeType != 1) target = target.parentNode;						
+						        if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+						        e.preventDefault();
+						    }
+						});
+	}
+	
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	
+	/* * * * * * * *
+	 *
+	 * Use this for high compatibility (iDevice + Android)
+	 *
+	 */
+	document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+	/*
+	 * * * * * * * */
+	
+	
+	/* * * * * * * *
+	 *
+	 * Use this for iDevice only
+	 *
+	 */
+	//document.addEventListener('DOMContentLoaded', loaded, false);
+	/*
+	 * * * * * * * */
+	
+	
+	/* * * * * * * *
+	 *
+	 * Use this if nothing else works
+	 *
+	 */
+	//window.addEventListener('load', setTimeout(function () { loaded(); }, 200), false);
+	/*
+	 * * * * * * * */
+	
+	</script>
+	<script type="text/javascript">
+      Mousetrap.bind('esc', function() { 
+      	jQuery("#myModal").modal("hide"); 
+      	jQuery('#myModal').removeAttr('style');
+      	jQuery.fancybox.close();
+      	jQuery('#fancycontainer').html('');
+      	jQuery('#fancycontainer').attr('style','width:800px;');
+      	currentTime = 0;//untuk timer di konfirmasi sms program.
+      	if(inkatalog==1){
+      		jQuery("#container_aslidashboard").show();
+      		jQuery("#container_formdashboard").html('');
+      	} 
+      	return false; 
+      });
+      Mousetrap.bind('ctrl+r', function() { 
+      	changeUrl('dashboard.html?token=NnwxMzU4ODY0OTEy&userid=6');
+      	return false; 
+      });
+      
+    </script>
+    <script src="js/assets/jquery.iframe-post-form.js"></script>
+	<script type="text/javascript" src="js/assets/jquery.timer.js"></script>
+	<script src="js/assets/socket.io.js"></script>
+	<script type="text/javascript">
+	//prepare push script
+	
+    var socket = io.connect(socket_host);
+    //logger(socket);
+    socket.on('all', function (push) {
+       logger(push);
+	  
+	 });
+	 
+  	//end - prepare push script
+  	/*ini aneh tapi nyata: pecahin telornya, bikin error dikit supaya aplikasi gak ngeLEK*/
+	  if(!isBrowser()) var a = b;
+	</script>
+  </body>
+</html>
