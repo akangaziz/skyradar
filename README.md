@@ -16,6 +16,9 @@ Platform: Desktop (Adobe Air). can be installed on All OS (Windows, Linux, Mac)<
 Users: ATC Officers in the world
 <br>
 <br>
+<h1>Installer</h1>
+Link Download: <a href='http://natari.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a>
+<br><br>
 <h1>Screenshoots</h1>
 
 <img src="http://natari.co.id/skyradar/screenshoots/login-page.png">
