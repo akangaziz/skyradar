@@ -14,35 +14,34 @@ Features:<br>
 <br>
 Platform: Desktop (Adobe Air). can be installed on All OS (Windows, Linux, Mac)<br>
 Users: ATC Officers in the world
-<br>
-<br>
+
 <h1>Author</h1>
 author of Sky Radar is akangaziz.<br>
 Follow him at twitter: <a href='http://twitter.com/akangaziz' target='_blank'>@akangaziz</a>
 <br>
-Sky Radar is developed to participated for <a href='http://spaceappschallenge.org' target='_blank'>NASA International Space Apps Challenge</a>. Sky Radar developed in 12 hours hackathon with combination of coffee, hot tea, snack & fast internet connection. :)
+Sky Radar is developed to be participated in <a href='http://spaceappschallenge.org' target='_blank'>NASA International Space Apps Challenge</a>. Sky Radar developed in 12 hours hackathon with secret combination of coffee, hot tea, snack & fast internet connection. :)
 
 <h1>Installation</h1>
 <h2>For Windows User</h2>
 1. Please download the SkyRadar installer: <a href='http://natari.co.id/skyradar/installer/SkyRadar-Setup.exe'>SkyRadar-Setup.exe</a><br>
 2. Then install SkyRadar by click SkyRadar-Setup.exe and follow installation instruction.
-<br>
+
 
 <h2>For MAC User</h2>
 1. Please download the SkyRadar installer: <a href='http://natari.co.id/skyradar/installer/SkyRadar.dmg'>SkyRadar.dmg</a><br>
 2. Then install SkyRadar by click SkyRadar.dmg and follow installation instruction.
-<br>
+
 
 <h2>For Linux and Other OS User</h2>
 1. Please download & install Adobe Air: <a href='http://get.adobe.com/air/' target='_blank'>Adobe Air</a><br>
 2. Please download the SkyRadar in Adobe Air format: <a href='http://natari.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a><br>
 3. Then install SkyRadar by click SkyRadar.air and follow installation instruction.
-<br><br>
+
 
 <h3>Notes</h3>
 Please note for Windows & MAC Users, if you failed to install from Windows or Mac installer,  you can try to install from Adobe Air installer. just follow the instruction on section 'For Linux and Other OS User'.
 
-<br><br>
+
 <h1>Screenshoots</h1>
 
 <img src="http://natari.co.id/skyradar/screenshoots/login-page.png">
