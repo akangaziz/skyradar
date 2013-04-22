@@ -17,8 +17,22 @@ Users: ATC Officers in the world
 <br>
 <br>
 <h1>Installer</h1>
-Link Download: <a href='http://natari.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a><br>
-Please install <a href='http://get.adobe.com/air/' target='_blank'>Adobe Air</a> before install Sky Radar
+<h2>For Windows User</h2>
+1. Please download the SkyRadar installer: <a href='http://natari.co.id/skyradar/installer/SkyRadar-Setup.exe'>SkyRadar-Setup.exe</a><br>
+2. Then install SkyRadar by click SkyRadar-Setup.exe and follow installation instruction.
+<br>
+<h2>For MAC User</h2>
+1. Please download the SkyRadar installer: <a href='http://natari.co.id/skyradar/installer/SkyRadar.dmg'>SkyRadar.dmg</a><br>
+2. Then install SkyRadar by click SkyRadar.dmg and follow installation instruction.
+<br>
+<h2>For Linux and Other OS User</h2>
+1. Please download & install Adobe Air: <a href='http://get.adobe.com/air/' target='_blank'>Adobe Air</a><br>
+2. Please download the SkyRadar for Adobe Air: <a href='http://natari.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a><br>
+3. Then install SkyRadar by click SkyRadar.air and follow installation instruction.
+<br><br>
+<h3>Notes</h3>
+Pleas note for Windows & MAC Users, if you failed to install from Windows or Mac installer, you can try to install from Adobe Air installer. just follow the instruction on section 'For Linux and Other OS User'.
+
 <br><br>
 <h1>Screenshoots</h1>
 
