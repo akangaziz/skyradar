@@ -34,7 +34,7 @@ Users: ATC Officers in the world
 <br><br>
 
 <h3>Notes</h3>
-Please note for Windows & MAC Users, if you failed to install from Windows or Mac installer, you can try to install from Adobe Air installer. just follow the instruction on section 'For Linux and Other OS User'.
+Please note for Windows & MAC Users, if you failed to install from Windows or Mac installer,  you can try to install from Adobe Air installer. just follow the instruction on section 'For Linux and Other OS User'.
 
 <br><br>
 <h1>Screenshoots</h1>
