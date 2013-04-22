@@ -17,7 +17,8 @@ Users: ATC Officers in the world
 <br>
 <br>
 <h1>Installer</h1>
-Link Download: <a href='http://natari.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a>
+Link Download: <a href='http://natari.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a><br>
+Please install <a href='http://get.adobe.com/air/' target='_blank'>Adobe Air</a> before install Sky Radar
 <br><br>
 <h1>Screenshoots</h1>
 
