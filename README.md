@@ -23,18 +23,18 @@ Sky Radar is developed to be participated in <a href='http://spaceappschallenge.
 
 <h1>Installation</h1>
 <h2>For Windows User</h2>
-1. Please download the SkyRadar installer: <a href='http://natari.co.id/skyradar/installer/SkyRadar-Setup.exe'>SkyRadar-Setup.exe</a><br>
+1. Please download the SkyRadar installer: <a href='http://apps.skycode.co.id/skyradar/installer/SkyRadar-Setup.exe'>SkyRadar-Setup.exe</a><br>
 2. Then install SkyRadar by click SkyRadar-Setup.exe and follow installation instruction.
 
 
 <h2>For MAC User</h2>
-1. Please download the SkyRadar installer: <a href='http://natari.co.id/skyradar/installer/SkyRadar.dmg'>SkyRadar.dmg</a><br>
+1. Please download the SkyRadar installer: <a href='http://apps.skycode.co.id/skyradar/installer/SkyRadar.dmg'>SkyRadar.dmg</a><br>
 2. Then install SkyRadar by click SkyRadar.dmg and follow installation instruction.
 
 
 <h2>For Linux and Other OS User</h2>
 1. Please download & install Adobe Air: <a href='http://get.adobe.com/air/' target='_blank'>Adobe Air</a><br>
-2. Please download the SkyRadar in Adobe Air format: <a href='http://natari.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a><br>
+2. Please download the SkyRadar in Adobe Air format: <a href='http://apps.skycode.co.id/skyradar/installer/SkyRadar.air'>SkyRadar.air</a><br>
 3. Then install SkyRadar by click SkyRadar.air and follow installation instruction.
 
 
@@ -44,71 +44,71 @@ Please note for Windows & MAC Users, if you failed to install from Windows or Ma
 
 <h1>Screenshoots</h1>
 
-<img src="http://natari.co.id/skyradar/screenshoots/login-page.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/login-page.png">
 <br><br>
-<img src="http://natari.co.id/skyradar/screenshoots/welcome-page.png">
-<br><br>
-
-
-<img src="http://natari.co.id/skyradar/screenshoots/submenu-other.png">
-<br><br>
-
-<img src="http://natari.co.id/skyradar/screenshoots/airport-detail.png">
-<br><br>
-
-<img src="http://natari.co.id/skyradar/screenshoots/airport-arrival.png">
-<br><br>
-<img src="http://natari.co.id/skyradar/screenshoots/airport-weather.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/welcome-page.png">
 <br><br>
 
 
-<img src="http://natari.co.id/skyradar/screenshoots/airport-plan-tracker-map.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/submenu-other.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/airport-radar.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-detail.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/airport-route2.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-arrival.png">
+<br><br>
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-weather.png">
 <br><br>
 
 
-<img src="http://natari.co.id/skyradar/screenshoots/airport-route3.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-plan-tracker-map.png">
+<br><br>
+
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-radar.png">
+<br><br>
+
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-route2.png">
 <br><br>
 
 
-<img src="http://natari.co.id/skyradar/screenshoots/airport-routes.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-route3.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic1.png">
+
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/airport-routes.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic2.png">
-<br><br>
-<img src="http://natari.co.id/skyradar/screenshoots/pic3.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic1.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic4.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic2.png">
+<br><br>
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic3.png">
+<br><br>
+
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic4.png">
 <br><br>
  
-<img src="http://natari.co.id/skyradar/screenshoots/pic6.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic6.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic7.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic7.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic8.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic8.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic9.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic9.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic10.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic10.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic11.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic11.png">
 <br><br>
 
-<img src="http://natari.co.id/skyradar/screenshoots/pic12.png">
+<img src="http://apps.skycode.co.id/skyradar/screenshoots/pic12.png">
 <br><br>
 
 
